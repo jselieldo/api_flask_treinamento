@@ -1,8 +1,8 @@
 from flask import Flask
-from .routes.usuario import usuario
-from .routes.contas import conta
-from .extentions import database
-from .commands.userCommands import userCommands
+from routes.usuario import usuario
+from routes.contas import conta
+from extentions import database
+from commands.userCommands import userCommands
 
 def create_app(config_object="app_flask.settings"):
     app=Flask(__name__)
