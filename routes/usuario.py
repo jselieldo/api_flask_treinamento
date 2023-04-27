@@ -1,6 +1,6 @@
 from flask import Blueprint, session, request, render_template, redirect, url_for, flash
 from werkzeug.security import check_password_hash
-from .extentions.database import mongo
+from ..extentions.database import mongo
 from datetime import date, datetime
 import socket
 import uuid
