@@ -1,9 +1,9 @@
 from flask import Flask
-from .routes.usuario import usuario
-from .routes.contas import conta
-from .extentions import database
+from routes.usuario import usuario
+from routes.contas import conta
+from extentions import database
 
-def create_app(config_object="settings"):
+def create_app(config_object="workspace.settings"):
     app=Flask(__name__)
     app.config.from_object(config_object)
 
